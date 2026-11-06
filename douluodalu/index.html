@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>斗罗大陆漫画瓜子-斗罗大陆漫画瓜子免费阅读_斗罗大陆漫画瓜子在线看</title>
+<meta name="description" content="斗罗大陆漫画瓜子阅读入口，聚合斗罗大陆漫画瓜子最新章节更新、热门篇章速览与阅读指引，帮助读者快速找到斗罗大陆漫画瓜子在线看的位置与阅读节奏。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1030'/%3E%3Cpath d='M32 10l5.6 14.9L52 30l-14.4 5.1L32 50l-5.6-14.9L12 30l14.4-5.1z' fill='%23ffcf5c'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%23ff7a3d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1a1026;
+  --ink-2:#2a1c3d;
+  --paper:#fbf7ef;
+  --paper-2:#f3ecdf;
+  --gold:#f0b83c;
+  --gold-deep:#c98a12;
+  --orange:#e8622c;
+  --teal:#2f7d78;
+  --line:rgba(26,16,38,.12);
+  --muted:#6b5f78;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(26,16,38,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1140px,92vw);margin:0 auto}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,247,239,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;gap:18px;
+  min-height:68px;flex-wrap:wrap;
+  padding:8px 0;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  background:linear-gradient(145deg,#22143a,#3a2359);
+  display:grid;place-items:center;flex:0 0 auto;
+  box-shadow:0 4px 14px rgba(34,20,58,.28);
+}
+.brand-name{
+  font-size:1.02rem;font-weight:800;letter-spacing:.02em;
+  color:var(--ink);white-space:nowrap;
+}
+.brand-name em{font-style:normal;color:var(--gold-deep)}
+.nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.nav a{
+  font-size:.9rem;font-weight:600;color:var(--ink-2);
+  padding:7px 12px;border-radius:999px;transition:.2s;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--paper-2);color:var(--orange)}
+.nav .nav-cta{
+  background:var(--ink);color:#fff;padding:8px 16px;
+}
+.nav .nav-cta:hover{background:var(--orange);color:#fff}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 12% -10%,rgba(240,184,60,.30),transparent 62%),
+    radial-gradient(900px 420px at 92% 8%,rgba(232,98,44,.20),transparent 60%),
+    linear-gradient(180deg,#1b1030 0%,#241538 58%,#2c1a44 100%);
+  color:#fdf8ee;
+  padding:56px 0 64px;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:64px;
+  background:linear-gradient(180deg,rgba(251,247,239,0),var(--paper));
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  position:relative;z-index:2;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.78rem;font-weight:700;letter-spacing:.14em;
+  color:#ffd479;border:1px solid rgba(255,212,121,.45);
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+h1{
+  font-size:clamp(1.85rem,4.4vw,2.9rem);
+  line-height:1.28;font-weight:900;letter-spacing:.01em;
+  color:#fffaf0;
+}
+h1 .hl{
+  background:linear-gradient(180deg,transparent 62%,rgba(240,184,60,.55) 62%);
+  padding:0 2px;
+}
+.hero-sub{
+  margin-top:18px;color:#d9cde8;font-size:1rem;max-width:38em;
+}
+.hero-sub strong{color:#ffd479;font-weight:700}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.95rem;font-weight:700;padding:12px 22px;border-radius:999px;
+  border:1px solid transparent;transition:.2s;cursor:pointer;
+}
+.btn-primary{background:var(--gold);color:#241538;box-shadow:0 8px 22px rgba(240,184,60,.30)}
+.btn-primary:hover{background:#ffcb55;transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fdf8ee}
+.btn-ghost:hover{border-color:#ffd479;color:#ffd479}
+.btn[data-download-placeholder="true"]{opacity:.85;pointer-events:none}
+
+.hero-meta{
+  display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;
+  padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
+}
+.hero-meta div{font-size:.82rem;color:#c7b9d8}
+.hero-meta b{display:block;font-size:1.28rem;color:#fff;font-weight:800;line-height:1.3}
+
+/* hero visual */
+.hero-art{
+  aspect-ratio:1/1;border-radius:26px;position:relative;
+  background:linear-gradient(160deg,#3a2359,#1c112e);
+  border:1px solid rgba(255,212,121,.28);
+  box-shadow:0 24px 60px rgba(0,0,0,.38);
+  display:grid;place-items:center;overflow:hidden;
+}
+.hero-art svg{width:82%;height:auto}
+.hero-art .tag{
+  position:absolute;bottom:14px;left:14px;right:14px;
+  display:flex;justify-content:space-between;gap:8px;
+  font-size:.74rem;color:#e7dcc6;
+}
+.hero-art .tag span{
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+  padding:4px 10px;border-radius:999px;
+}
+
+/* ---------- section base ---------- */
+section{padding:58px 0}
+.section-head{margin-bottom:28px;max-width:44em}
+.kicker{
+  font-size:.76rem;font-weight:800;letter-spacing:.16em;
+  color:var(--gold-deep);text-transform:uppercase;margin-bottom:8px;
+}
+h2{
+  font-size:clamp(1.35rem,2.6vw,1.75rem);font-weight:800;line-height:1.35;
+  letter-spacing:.01em;
+}
+.section-head p{margin-top:10px;color:var(--muted);font-size:.95rem}
+
+/* ---------- cards: 更新入口 ---------- */
+.card-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 22px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:10px;
+  transition:.22s;
+}
+.card:hover{transform:translateY(-3px);border-color:rgba(232,98,44,.35)}
+.card-icon{
+  width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  background:var(--paper-2);margin-bottom:4px;
+}
+.card h3{font-size:1.05rem;font-weight:800;line-height:1.4}
+.card p{font-size:.92rem;color:var(--muted);flex:1}
+.card .link{
+  font-size:.88rem;font-weight:700;color:var(--orange);
+  display:inline-flex;align-items:center;gap:6px;
+}
+.card .link:hover{text-decoration:underline}
+.card .link[aria-disabled="true"]{color:var(--muted);text-decoration:none;pointer-events:none}
+
+/* ---------- 阅读脉络 / 列表 ---------- */
+.split{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start;
+}
+.arc-list{list-style:none;display:flex;flex-direction:column;gap:0}
+.arc-list li{
+  display:grid;grid-template-columns:auto 1fr;gap:16px;
+  padding:18px 0;border-bottom:1px dashed var(--line);
+}
+.arc-list li:last-child{border-bottom:none}
+.arc-num{
+  width:38px;height:38px;border-radius:50%;flex:0 0 auto;
+  display:grid;place-items:center;
+  background:linear-gradient(145deg,#2a1c3d,#432a63);
+  color:#ffd479;font-weight:800;font-size:.9rem;
+}
+.arc-list h3{font-size:1rem;font-weight:800;margin-bottom:4px}
+.arc-list p{font-size:.9rem;color:var(--muted)}
+
+.panel{
+  background:linear-gradient(160deg,#241538,#1b1030);
+  color:#f2eaf9;border-radius:22px;padding:30px 28px;
+  box-shadow:0 20px 44px rgba(26,16,38,.28);
+  position:relative;overflow:hidden;
+}
+.panel::before{
+  content:"";position:absolute;width:220px;height:220px;right:-70px;top:-70px;
+  background:radial-gradient(circle,rgba(240,184,60,.34),transparent 68%);
+}
+.panel h3{font-size:1.1rem;font-weight:800;margin-bottom:14px;position:relative}
+.panel p{font-size:.92rem;color:#cdbfdf;position:relative}
+.panel ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:12px;position:relative}
+.panel ul li{
+  display:flex;gap:10px;font-size:.9rem;color:#e3d8f0;
+  padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.10);
+}
+.panel ul li:last-child{border-bottom:none;padding-bottom:0}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);margin-top:.62em;flex:0 0 auto}
+
+/* ---------- 阅读提示 三栏 ---------- */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tip{
+  background:var(--paper-2);border-radius:var(--radius);
+  padding:22px 20px;border:1px solid rgba(26,16,38,.06);
+}
+.tip .num{
+  font-size:.74rem;font-weight:800;letter-spacing:.14em;color:var(--teal);
+  margin-bottom:8px;
+}
+.tip h3{font-size:.98rem;font-weight:800;margin-bottom:6px}
+.tip p{font-size:.89rem;color:var(--muted)}
+
+/* ---------- 问答 ---------- */
+.faq{display:flex;flex-direction:column;gap:14px;max-width:52em}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px 20px;box-shadow:0 4px 16px rgba(26,16,38,.05);
+}
+details[open]{border-color:rgba(240,184,60,.55)}
+summary{
+  cursor:pointer;font-weight:800;font-size:.98rem;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";font-size:1.25rem;color:var(--gold-deep);font-weight:700;line-height:1;
+}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;font-size:.92rem;color:var(--muted)}
+
+/* ---------- 下载条 ---------- */
+.download-strip{
+  background:linear-gradient(120deg,#f0b83c,#e8622c);
+  border-radius:22px;padding:30px 32px;
+  display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+  color:#241538;box-shadow:0 18px 40px rgba(232,98,44,.26);
+}
+.download-strip .ds-text{flex:1;min-width:240px}
+.download-strip h2{color:#22132f;font-size:1.3rem}
+.download-strip p{font-size:.92rem;color:#3a2359;margin-top:6px;max-width:44em}
+.ds-btn{
+  background:#22132f;color:#ffd479;font-weight:800;font-size:.95rem;
+  padding:13px 26px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;
+  border:none;
+}
+.ds-btn[data-download-placeholder="true"]{pointer-events:none;opacity:.9}
+
+/* ---------- footer ---------- */
+.site-footer{
+  background:#160d26;color:#b9aaca;padding:44px 0 30px;margin-top:20px;
+}
+.footer-top{
+  display:flex;gap:30px;justify-content:space-between;flex-wrap:wrap;
+  padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.footer-brand{display:flex;gap:12px;align-items:flex-start;max-width:34em}
+.footer-brand .brand-name{color:#fffaf0;white-space:normal}
+.footer-brand p{font-size:.86rem;margin-top:8px;color:#9c8cb2;line-height:1.7}
+.footer-links{display:flex;gap:40px;flex-wrap:wrap}
+.footer-links h4{font-size:.8rem;letter-spacing:.12em;color:#ffd479;margin-bottom:10px}
+.footer-links a{display:block;font-size:.86rem;color:#b9aaca;padding:3px 0}
+.footer-links a:hover{color:#ffd479}
+.footer-bottom{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:20px;font-size:.8rem;color:#8b7ba3;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:940px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-art{max-width:400px;width:100%;margin:0 auto}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr;gap:28px}
+  .tips{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .header-inner{min-height:auto;padding:10px 0;gap:10px}
+  .brand-name{font-size:.92rem;white-space:normal}
+  .nav{width:100%;margin-left:0;justify-content:flex-start;gap:4px}
+  .nav a{font-size:.84rem;padding:6px 10px}
+  .hero{padding:38px 0 52px}
+  .hero-meta{gap:16px}
+  .hero-meta b{font-size:1.12rem}
+  .card-grid{grid-template-columns:1fr}
+  section{padding:44px 0}
+  .panel{padding:24px 20px}
+  .download-strip{padding:24px 20px;border-radius:18px}
+  .footer-top{gap:22px}
+  .footer-links{gap:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="斗罗大陆漫画瓜子 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l2.2 5.9L20 10l-5.8 2.1L12 18l-2.2-5.9L4 10l5.8-2.1z" fill="#ffcf5c"/>
+          <circle cx="12" cy="10" r="2.1" fill="#e8622c"/>
+        </svg>
+      </span>
+      <span class="brand-name">斗罗大陆漫画瓜子</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#updates">更新入口</a>
+      <a href="#storyline">篇章脉络</a>
+      <a href="#reading">阅读提示</a>
+      <a href="#faq">常见问题</a>
+      <a class="nav-cta" href="#updates">开始阅读</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">阅读入口 · 篇章速览 · 追更节奏</span>
+        <h1 id="hero-title">斗罗大陆漫画瓜子</h1>
+        <p class="hero-sub">
+          这里是围绕<strong>斗罗大陆漫画瓜子</strong>的阅读首页。我们把更新入口、篇章脉络和追更习惯放在同一页，
+          方便你在打开<strong>斗罗大陆漫画瓜子</strong>时先看清章节位置，再决定从哪里续读，而不是在多个页面之间来回跳转。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#updates">
+            进入更新入口
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#storyline">先看篇章脉络</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>3</b>类阅读入口</div>
+          <div><b>4</b>段篇章脉络</div>
+          <div><b>5</b>条追更提示</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="46%" r="50%">
+              <stop offset="0%" stop-color="#ffcf5c" stop-opacity=".85"/>
+              <stop offset="55%" stop-color="#e8622c" stop-opacity=".30"/>
+              <stop offset="100%" stop-color="#e8622c" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="book" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fffaf0"/>
+              <stop offset="100%" stop-color="#e8dcc6"/>
+            </linearGradient>
+          </defs>
+          <circle cx="160" cy="150" r="130" fill="url(#glow)"/>
+          <circle cx="160" cy="150" r="98" stroke="#ffd479" stroke-opacity=".38" stroke-width="1.4" stroke-dasharray="4 7"/>
+          <path d="M160 40l9 26 26 9-26 9-9 26-9-26-26-9 26-9z" fill="#ffcf5c" opacity=".95"/>
+          <path d="M62 208l5 14 14 5-14 5-5 14-5-14-14-5 14-5z" fill="#ff9a5c" opacity=".85"/>
+          <path d="M258 92l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#ffd479" opacity=".8"/>
+          <!-- open book -->
+          <path d="M78 190c26-14 50-14 74 0v62c-24-14-48-14-74 0z" fill="url(#book)"/>
+          <path d="M242 190c-26-14-50-14-74 0v62c24-14 48-14 74 0z" fill="url(#book)"/>
+          <path d="M160 190v62" stroke="#c98a12" stroke-width="2.4" stroke-linecap="round"/>
+          <g stroke="#c98a12" stroke-opacity=".55" stroke-width="2.2" stroke-linecap="round">
+            <path d="M98 208h42M98 222h42M98 236h30"/>
+            <path d="M180 208h42M180 222h42M180 236h30"/>
+          </g>
+          <!-- seed / melon-seed motif -->
+          <g transform="translate(160 118)">
+            <path d="M0-30c17 0 30 15 30 33S17 36 0 36-30 21-30 3s13-33 30-33z" fill="#ffe6a8" fill-opacity=".16" stroke="#ffd479" stroke-width="1.8"/>
+            <path d="M0-16c9 0 16 8 16 18S9 20 0 20-16 12-16 2s7-18 16-18z" fill="#e8622c" fill-opacity=".55"/>
+          </g>
+        </svg>
+        <div class="tag">
+          <span>篇章速览</span>
+          <span>追更节奏</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 更新入口 -->
+  <section id="updates" aria-labelledby="updates-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">阅读入口</div>
+        <h2 id="updates-title">从哪里开始读斗罗大陆漫画瓜子</h2>
+        <p>不同读者的目的不一样：有人追最新话，有人补前面剧情，有人只想看某个角色线。下面三个入口对应三种典型需求，你可以直接选择最接近自己的一种。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5" stroke="#e8622c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>追最新话</h3>
+          <p>适合已经跟读一段时间的读者。打开斗罗大陆漫画瓜子后，先确认当前章节编号，再进入最新一话，避免重复阅读已经看过的内容。</p>
+          <a class="link" href="#storyline">查看篇章位置 →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="#2f7d78" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>从头补读</h3>
+          <p>适合刚接触斗罗大陆漫画瓜子的新读者。建议先按篇章顺序读主线，再回头补支线，这样人物关系和设定不会被打乱。</p>
+          <a class="link" href="#reading">阅读顺序提示 →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="#c98a12" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="#c98a12" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>按关键词找</h3>
+          <p>适合只想看某个角色或某个阶段的读者。用页面内的检索框输入关键词，即可快速筛出相关段落，不必逐话翻找。</p>
+          <a class="link" href="#faq">常见问题 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 篇章脉络 -->
+  <section id="storyline" aria-labelledby="storyline-title" style="background:linear-gradient(180deg,var(--paper),var(--paper-2))">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">篇章脉络</div>
+        <h2 id="storyline-title">斗罗大陆漫画瓜子的四段阅读线索</h2>
+        <p>把斗罗大陆漫画瓜子拆成四段来看，会更容易判断自己停在哪一步、接下来读什么。下面只描述阅读结构，不涉及具体剧情走向。</p>
+      </div>
+      <div class="split">
+        <ol class="arc-list">
+          <li>
+            <span class="arc-num">01</span>
+            <div>
+              <h3>入门铺垫段</h3>
+              <p>人物陆续登场，世界观逐步展开。这一段信息密度高，建议慢读，记住主要角色之间的关系。</p>
+            </div>
+          </li>
+          <li>
+            <span class="arc-num">02</span>
+            <div>
+              <h3>成长推进段</h3>
+              <p>主线开始加速，训练与对抗的情节增多。此时适合连续阅读，中断太久容易忘记前情。</p>
+            </div>
+          </li>
+          <li>
+            <span class="arc-num">03</span>
+            <div>
+              <h3>冲突集中段</h3>
+              <p>矛盾与转折密集，是斗罗大陆漫画瓜子最容易被讨论的部分。补读时建议准备一段较完整的时间。</p>
+            </div>
+          </li>
+          <li>
+            <span class="arc-num">04</span>
+            <div>
+              <h3>收束与延展段</h3>
+              <p>原有线索逐渐回收，同时为后续内容留出空间，适合回头对照前面的伏笔。</p>
+            </div>
+          </li>
+        </ol>
+        <aside class="panel" aria-label="检索与提示">
+          <h3>快速筛出想读的段落</h3>
+          <p>输入角色名、篇章关键词或章节编号，页面会即时标出匹配的条目，帮助你定位斗罗大陆漫画瓜子的相关阅读位置。</p>
+          <form role="search" onsubmit="return false;" style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;position:relative">
+            <label for="arcSearch" style="position:absolute;left:-9999px">检索篇章关键词</label>
+            <input id="arcSearch" type="search" placeholder="例如：角色名 / 篇章 / 章节号" style="flex:1;min-width:150px;padding:11px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;font-size:.9rem;font-family:inherit">
+            <button type="button" class="btn btn-primary" style="padding:11px 18px;font-size:.88rem">筛选</button>
+          </form>
+          <ul>
+            <li><span class="dot"></span>先确认章节位置，再决定续读点</li>
+            <li><span class="dot"></span>补读主线优先，支线随后</li>
+            <li><span class="dot"></span>单次阅读留足时间，避免断在转折处</li>
+            <li><span class="dot"></span>遇到设定疑问，回到入门铺垫段对照</li>
+            <li><span class="dot"></span>追更时以章节编号为准，不依赖标题记忆</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读提示 -->
+  <section id="reading" aria-labelledby="reading-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">阅读提示</div>
+        <h2 id="reading-title">读斗罗大陆漫画瓜子时的三个习惯</h2>
+        <p>内容较长时，阅读方式本身会影响体验。下面三点来自常见的追更场景，供你参考调整节奏。</p>
+      </div>
+      <div class="tips">
+        <article class="tip">
+          <div class="num">习惯 01</div>
+          <h3>按篇章切分时间</h3>
+          <p>把斗罗大陆漫画瓜子按篇章分段阅读，每段结束后停一下，回顾人物变化，比一口气读完更容易记住细节。</p>
+        </article>
+        <article class="tip">
+          <div class="num">习惯 02</div>
+          <h3>记录自己的进度</h3>
+          <p>用章节编号做书签，而不是只记标题。标题容易混淆，编号唯一，下次打开斗罗大陆漫画瓜子时能迅速归位。</p>
+        </article>
+        <article class="tip">
+          <div class="num">习惯 03</div>
+          <h3>先读正文再看讨论</h3>
+          <p>追更时先完成当话阅读，再去看相关讨论。这样对斗罗大陆漫画瓜子的理解不会被他人观点提前带偏。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-title" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">常见问题</div>
+        <h2 id="faq-title">关于斗罗大陆漫画瓜子的几个疑问</h2>
+        <p>以下问题来自读者在搜索和阅读过程中最常提出的几类，回答只针对阅读入口与使用方式。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>斗罗大陆漫画瓜子是什么类型的阅读入口？</summary>
+          <p>它面向想阅读斗罗大陆系列漫画的读者，把更新入口、篇章脉络和追更提示集中在一页，减少在多个页面间查找的时间。</p>
+        </details>
+        <details>
+          <summary>新读者应该从哪一段开始？</summary>
+          <p>建议从入门铺垫段开始，按顺序推进。斗罗大陆漫画瓜子的设定和人物关系在前段铺开，跳读容易造成理解断层。</p>
+        </details>
+        <details>
+          <summary>如何确认自己读到哪一话？</summary>
+          <p>以章节编号为准，配合页面内的检索框输入编号即可定位。斗罗大陆漫画瓜子的章节标题可能相似，编号更可靠。</p>
+        </details>
+        <details>
+          <summary>页面上的筛选框能做什么？</summary>
+          <p>它用于在篇章脉络中快速查找相关条目，属于页内定位工具，不改变页面主体内容，也不需要额外注册。</p>
+        </details>
+        <details>
+          <summary>可以下载相关内容吗？</summary>
+          <p>页面提供了下载入口占位，正式地址尚未接入。在地址开放前，该按钮保持不可点击状态，请以页面阅读为主。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载条 -->
+  <section aria-labelledby="dl-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="download-strip">
+        <div class="ds-text">
+          <h2 id="dl-title">把斗罗大陆漫画瓜子阅读页收进本地</h2>
+          <p>下载入口用于保存页面的阅读索引与篇章结构，方便离线时对照进度。正式地址接入前，按钮暂不可用。</p>
+        </div>
+        <a class="ds-btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          下载
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l2.2 5.9L20 10l-5.8 2.1L12 18l-2.2-5.9L4 10l5.8-2.1z" fill="#ffcf5c"/>
+            <circle cx="12" cy="10" r="2.1" fill="#e8622c"/>
+          </svg>
+        </span>
+        <div>
+          <div class="brand-name">斗罗大陆漫画瓜子</div>
+          <p>围绕斗罗大陆漫画瓜子整理阅读入口、篇章脉络与追更提示，帮助读者更快找到续读位置，把注意力留在内容本身。</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>页面导航</h4>
+          <a href="#updates">更新入口</a>
+          <a href="#storyline">篇章脉络</a>
+          <a href="#reading">阅读提示</a>
+        </div>
+        <div>
+          <h4>使用帮助</h4>
+          <a href="#faq">常见问题</a>
+          <a href="#top">回到顶部</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>斗罗大陆漫画瓜子 · 阅读主题首页</span>
+      <span>页面内容以阅读指引为主，具体章节以实际入口为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+                                                                                           </html>
