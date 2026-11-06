@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大赛爆料黑料-大赛黑料爆料_每日爆料热点黑料合集</title>
+<meta name="description" content="每日大赛爆料黑料首页，汇总每日大赛相关的爆料黑料与热点吃瓜内容，按板块呈现最新热点、黑料线索与讨论方向，帮助访问者快速了解当日大赛爆料黑料的整体走向。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141822'/%3E%3Cpath d='M18 44 L32 16 L46 44 Z' fill='none' stroke='%23ffb648' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='36' r='4' fill='%23ff5470'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0f1218;
+    --bg-soft:#161b24;
+    --card:#1b212c;
+    --line:#2a3240;
+    --text:#e8ecf3;
+    --muted:#9aa6b8;
+    --gold:#ffb648;
+    --rose:#ff5470;
+    --cyan:#4fd1c5;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(900px 420px at 82% -8%, rgba(255,84,112,.16), transparent 60%),
+      radial-gradient(760px 380px at 8% 0%, rgba(255,182,72,.13), transparent 62%),
+      var(--bg);
+    color:var(--text);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(12px);
+    background:rgba(15,18,24,.86);
+    border-bottom:1px solid var(--line);
+  }
+  .hdr{display:flex;align-items:center;gap:18px;min-height:66px;flex-wrap:wrap;padding:10px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:17px;color:#fff;}
+  .logo svg{flex:0 0 auto;}
+  nav.main{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto;}
+  nav.main a{
+    font-size:14px;color:var(--muted);padding:7px 12px;border-radius:999px;
+    border:1px solid transparent;transition:.2s;
+  }
+  nav.main a:hover{color:#fff;border-color:var(--line);background:var(--bg-soft);}
+  nav.main a.hot{color:var(--gold);}
+
+  /* hero */
+  .hero{padding:52px 0 36px;}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:32px;align-items:center;}
+  .tag{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1px;
+    color:var(--gold);border:1px solid rgba(255,182,72,.4);background:rgba(255,182,72,.08);
+    padding:5px 12px;border-radius:999px;margin-bottom:18px;
+  }
+  .tag .dot{width:7px;height:7px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px rgba(255,84,112,.18);}
+  h1{
+    font-size:clamp(28px,4.6vw,46px);
+    line-height:1.22;margin:0 0 16px;letter-spacing:1px;font-weight:900;
+    background:linear-gradient(100deg,#fff 22%,var(--gold) 62%,var(--rose) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .lead{color:var(--muted);font-size:15.5px;max-width:44em;margin:0 0 24px;}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;
+    padding:11px 22px;border-radius:999px;border:1px solid transparent;transition:.2s;
+  }
+  .btn-primary{background:linear-gradient(100deg,var(--rose),#ff8a5c);color:#1a0f12;}
+  .btn-primary:hover{filter:brightness(1.08);}
+  .btn-ghost{border-color:var(--line);color:var(--text);background:var(--bg-soft);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
+  .btn[aria-disabled="true"]{opacity:.55;pointer-events:none;}
+
+  .hero-art{
+    position:relative;border:1px solid var(--line);border-radius:var(--radius);
+    background:linear-gradient(160deg,#1d2430,#141921);
+    padding:18px;overflow:hidden;
+  }
+  .hero-art::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(220px 120px at 80% 10%,rgba(255,84,112,.22),transparent 70%);
+    pointer-events:none;
+  }
+  .meter{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px;}
+  .bar{height:7px;border-radius:99px;background:#0c1016;overflow:hidden;margin-bottom:16px;border:1px solid var(--line);}
+  .bar span{display:block;height:100%;border-radius:99px;}
+  .b1{width:78%;background:linear-gradient(90deg,var(--gold),var(--rose));}
+  .b2{width:54%;background:linear-gradient(90deg,var(--cyan),#5b8cff);}
+  .b3{width:36%;background:linear-gradient(90deg,#8b7dff,var(--rose));}
+  .art-note{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;}
+
+  /* sections */
+  section{padding:44px 0;}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;}
+  .sec-head h2{font-size:clamp(20px,2.6vw,26px);margin:0;letter-spacing:.5px;}
+  .sec-head h2 em{font-style:normal;color:var(--gold);}
+  .sec-head p{margin:0;color:var(--muted);font-size:13.5px;}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;display:flex;flex-direction:column;gap:10px;transition:.22s;
+  }
+  .card:hover{border-color:rgba(255,182,72,.5);transform:translateY(-3px);}
+  .card .kicker{font-size:12px;letter-spacing:1.2px;color:var(--cyan);font-weight:700;}
+  .card h3{margin:0;font-size:17px;line-height:1.5;}
+  .card p{margin:0;color:var(--muted);font-size:14px;}
+  .card .meta{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:#7f8b9d;display:flex;justify-content:space-between;gap:10px;}
+
+  /* timeline list */
+  .feed{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg-soft);}
+  .item{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:18px 22px;border-bottom:1px solid var(--line);}
+  .item:last-child{border-bottom:none;}
+  .item .time{font-size:12.5px;color:var(--gold);font-weight:700;letter-spacing:.5px;padding-top:2px;}
+  .item h4{margin:0 0 6px;font-size:15.5px;}
+  .item p{margin:0;color:var(--muted);font-size:14px;}
+  .flag{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:6px;margin-left:8px;vertical-align:2px;}
+  .f-hot{background:rgba(255,84,112,.16);color:#ff9aab;}
+  .f-new{background:rgba(79,209,197,.14);color:#8fe6dc;}
+
+  /* two column */
+  .two{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+  .panel h3{margin:0 0 14px;font-size:17px;}
+  .panel p{margin:0 0 14px;color:var(--muted);font-size:14.5px;}
+  .panel p:last-child{margin-bottom:0;}
+  .checklist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+  .checklist li{display:flex;gap:11px;font-size:14px;color:var(--muted);}
+  .checklist li b{color:var(--text);font-weight:700;display:block;margin-bottom:2px;}
+  .checklist .num{
+    flex:0 0 24px;height:24px;border-radius:8px;display:grid;place-items:center;
+    background:rgba(255,182,72,.14);color:var(--gold);font-size:12.5px;font-weight:800;
+  }
+
+  /* search */
+  .searchbox{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+  .searchbox input{
+    flex:1 1 220px;min-width:0;background:#0c1016;border:1px solid var(--line);color:var(--text);
+    padding:11px 15px;border-radius:10px;font-size:14.5px;font-family:inherit;outline:none;
+  }
+  .searchbox input:focus{border-color:var(--gold);}
+  .searchbox button{
+    background:var(--gold);color:#191203;border:none;border-radius:10px;padding:11px 20px;
+    font-size:14.5px;font-weight:800;cursor:pointer;font-family:inherit;
+  }
+  .searchbox button:hover{filter:brightness(1.06);}
+  #searchResult{font-size:13.5px;color:var(--muted);min-height:1.6em;}
+
+  /* footer */
+  footer.site{border-top:1px solid var(--line);padding:34px 0 40px;margin-top:20px;background:#0b0e13;}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  .foot-brand{font-weight:800;color:#fff;display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  footer p{margin:0;color:#7f8b9d;font-size:13px;max-width:46em;}
+  .foot-links{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);}
+  .foot-links a:hover{color:var(--gold);}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .cards{grid-template-columns:1fr 1fr;}
+    .two{grid-template-columns:1fr;}
+  }
+  @media (max-width:620px){
+    body{font-size:15.5px;}
+    .hdr{min-height:60px;gap:10px;}
+    nav.main{width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;}
+    nav.main a{white-space:nowrap;}
+    .hero{padding:34px 0 24px;}
+    .cards{grid-template-columns:1fr;}
+    .item{grid-template-columns:1fr;gap:6px;padding:16px 18px;}
+    section{padding:34px 0;}
+    .panel{padding:20px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap hdr">
+    <a class="logo" href="#top" aria-label="每日大赛爆料黑料首页">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#141822"/>
+        <path d="M18 44 L32 16 L46 44 Z" fill="none" stroke="#ffb648" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="32" cy="36" r="4" fill="#ff5470"/>
+      </svg>
+      <span>每日大赛爆料黑料</span>
+    </a>
+    <nav class="main">
+      <a href="#today" class="hot">今日爆料</a>
+      <a href="#boards">爆料板块</a>
+      <a href="#feed">黑料速览</a>
+      <a href="#read">怎么看爆料</a>
+      <a href="#search">站内查找</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag"><span class="dot"></span>每日更新 · 热点吃瓜方向</span>
+        <h1>每日大赛爆料黑料</h1>
+        <p class="lead">
+          这里把每天围绕各类大赛出现的爆料、黑料与吃瓜讨论集中到一处：热点线索、争议焦点、讨论走向，按板块与时间顺序排开。访问者不必在多个页面之间来回跳转，先看整体脉络，再决定深入哪一条。每日大赛爆料黑料的内容以公开讨论为来源，标注方向而不替代事实判断。
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#today">查看今日爆料</a>
+          <a class="btn btn-ghost" href="#boards">进入爆料板块</a>
+        </div>
+      </div>
+      <aside class="hero-art" aria-label="今日爆料热度示意">
+        <div class="meter"><span>爆料热度</span><span>高位</span></div>
+        <div class="bar"><span class="b1"></span></div>
+        <div class="meter"><span>黑料讨论量</span><span>持续</span></div>
+        <div class="bar"><span class="b2"></span></div>
+        <div class="meter"><span>争议待澄清</span><span>偏低</span></div>
+        <div class="bar"><span class="b3"></span></div>
+        <p class="art-note">示意条仅表示当日各板块讨论的相对活跃程度，方便快速判断先看哪一块。</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="today">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>今日爆料 <em>先看这三条</em></h2>
+        <p>每日大赛爆料黑料的第一落点，按关注度排序</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="kicker">焦点 · 争议</span>
+          <h3>赛果之外的声音最密集</h3>
+          <p>当日讨论集中在大赛结果公布后的质疑上，爆料多围绕评分与流程细节展开，黑料线索以截图与转述为主，尚未形成统一口径。</p>
+          <div class="meta"><span>爆料类</span><span>讨论活跃</span></div>
+        </article>
+        <article class="card">
+          <span class="kicker">人物 · 黑料</span>
+          <h3>参赛相关人物旧事被翻出</h3>
+          <p>与大赛相关的旧言论被重新整理成黑料合集，内容跨度较大，时间线需要自行核对，建议先看原始出处再看二次加工版本。</p>
+          <div class="meta"><span>黑料类</span><span>信息待核</span></div>
+        </article>
+        <article class="card">
+          <span class="kicker">现场 · 爆料</span>
+          <h3>现场细节成为新线索来源</h3>
+          <p>围绕大赛现场的爆料以流程与安排为主，细节描述多于结论，适合作为拼图的一块，而不是单独当作定论使用。</p>
+          <div class="meta"><span>现场类</span><span>新增线索</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="boards">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>爆料板块 <em>按方向归类</em></h2>
+        <p>每日大赛爆料黑料按内容方向拆分，便于按需浏览</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="kicker">赛果争议</span>
+          <h3>结果与预期的落差</h3>
+          <p>记录对大赛结果的不同看法，保留各方说法，不替任何一方下结论。适合想了解争议从何而来的人先读。</p>
+          <div class="meta"><span>持续更新</span><span>观点并列</span></div>
+        </article>
+        <article class="card">
+          <span class="kicker">人物黑料</span>
+          <h3>与大赛相关的人物旧账</h3>
+          <p>把散落的言论、旧帖与转述按人物归档，标注出现时间与来源形态，方便判断是新材料还是旧内容换包装。</p>
+          <div class="meta"><span>按人归档</span><span>来源标注</span></div>
+        </article>
+        <article class="card">
+          <span class="kicker">现场与流程</span>
+          <h3>细节里的爆料空间</h3>
+          <p>现场安排、流程变化、临时调整等细节被网友反复讨论，这类爆料往往零碎，需要与其它板块对照阅读。</p>
+          <div class="meta"><span>细节为主</span><span>需对照</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="feed">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>黑料速览 <em>时间线</em></h2>
+        <p>每日大赛爆料黑料按出现顺序排列，先看最新</p>
+      </div>
+      <div class="feed">
+        <div class="item">
+          <div class="time">最新</div>
+          <div>
+            <h4>大赛结果公布后出现集中讨论<span class="flag f-hot">热点</span></h4>
+            <p>围绕结果的爆料数量上升，多为对过程的追问，黑料部分仍以转述为主，建议优先查看带原始截图的条目。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">稍早</div>
+          <div>
+            <h4>相关人物旧帖被整理成合集<span class="flag f-new">新增</span></h4>
+            <p>有人在讨论区把与大赛相关的旧内容汇总，形成一份黑料线索清单，条目之间时间跨度较大，阅读时需注意发布时间。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">当日</div>
+          <div>
+            <h4>现场流程细节被反复引用</h4>
+            <p>关于大赛现场安排的描述被多次引用，不同版本之间存在出入，这类爆料适合作为讨论背景，不宜单独作为判断依据。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">当日</div>
+          <div>
+            <h4>爆料与澄清几乎同步出现</h4>
+            <p>部分黑料刚出现就有对应说明，双方说法并列呈现，每日大赛爆料黑料的价值正在于把这些声音放在同一页面上对照。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="read">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>怎么看爆料 <em>阅读顺序</em></h2>
+        <p>给每天来刷每日大赛爆料黑料的读者一份顺序参考</p>
+      </div>
+      <div class="two">
+        <div class="panel">
+          <h3>先分辨材料形态，再谈结论</h3>
+          <p>爆料与黑料在传播过程中通常会经历几轮加工：原始截图、文字转述、二次汇总、情绪化标题。每日大赛爆料黑料页面尽量把不同形态分开陈列，读者可以先确认自己看到的是哪一层材料，再决定是否采信。</p>
+          <p>当同一件事同时出现爆料与澄清时，两者并列阅读比单独看一方更接近全貌。页面中的时间标注是为了帮助判断先后，而不是给事件定性。</p>
+          <p>对于人物类黑料，旧内容被重新翻出是常见现象。留意发布时间，能避免把几年前的言论当成当日新闻。这也是浏览每日大赛爆料黑料时最容易被忽略的一步。</p>
+        </div>
+        <div class="panel">
+          <h3>四步阅读法</h3>
+          <ul class="checklist">
+            <li><span class="num">1</span><span><b>看时间</b>确认爆料出现的位置，区分新旧内容。</span></li>
+            <li><span class="num">2</span><span><b>看形态</b>截图、转述还是汇总，材料层级不同。</span></li>
+            <li><span class="num">3</span><span><b>看对照</b>爆料旁边有没有对应的说明或澄清。</span></li>
+            <li><span class="num">4</span><span><b>看范围</b>单条爆料能支撑多远的结论，别越界。</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="search">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>站内查找 <em>快速定位</em></h2>
+        <p>在本页栏目中检索关键词</p>
+      </div>
+      <div class="panel">
+        <form class="searchbox" id="searchForm" role="search">
+          <label for="q" style="position:absolute;left:-9999px;">搜索爆料关键词</label>
+          <input id="q" type="search" placeholder="输入关键词，如：赛果、人物、现场、澄清" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <p id="searchResult" aria-live="polite">支持检索本页的爆料板块与黑料速览条目。</p>
+        <p style="margin-top:14px;">如果只是想浏览，直接从<a href="#today" style="color:var(--gold);">今日爆料</a>开始即可；想按方向深挖，则进入<a href="#boards" style="color:var(--gold);">爆料板块</a>。每日大赛爆料黑料的内容会随讨论推进调整排序。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">
+        <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#141822"/>
+          <path d="M18 44 L32 16 L46 44 Z" fill="none" stroke="#ffb648" stroke-width="4" stroke-linejoin="round"/>
+          <circle cx="32" cy="36" r="4" fill="#ff5470"/>
+        </svg>
+        每日大赛爆料黑料
+      </div>
+      <p>每日大赛爆料黑料为话题聚合型首页，内容来自公开讨论的整理与呈现，标注方向与时间，不对事件作最终认定。阅读时请结合原始材料自行判断。</p>
+    </div>
+    <div class="foot-links">
+      <a href="#today">今日爆料</a>
+      <a href="#boards">爆料板块</a>
+      <a href="#feed">黑料速览</a>
+      <a href="#read">阅读顺序</a>
+      <a href="#top">回到顶部</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var out = document.getElementById('searchResult');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var kw = (input.value || '').trim();
+    if(!kw){ out.textContent = '请输入关键词后再查找。'; return; }
+    var nodes = document.querySelectorAll('#boards .card, #feed .item, #today .card');
+    var hits = [];
+    nodes.forEach(function(n){
+      if(n.textContent.indexOf(kw) > -1){
+        var t = n.querySelector('h3, h4');
+        hits.push(t ? t.textContent.trim() : kw);
+      }
+    });
+    if(hits.length){
+      out.textContent = '共找到 ' + hits.length + ' 条相关条目：' + hits.slice(0,5).join('；') + (hits.length > 5 ? ' 等。' : '。');
+    }else{
+      out.textContent = '本页暂未收录包含“' + kw + '”的条目，可换个关键词，或先浏览今日爆料。';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
