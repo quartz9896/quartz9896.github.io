@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人人影视字幕组-字幕组发展历史_影视字幕翻译作品与版本说明</title>
+<meta name="description" content="人人影视字幕组主题首页：梳理该字幕组的发展历史与阶段变化，说明其影视字幕翻译作品的类型、命名与版本差异，帮助访问者理解这一民间字幕翻译团队的来龙去脉与作品面貌。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2b3a'/%3E%3Cpath d='M14 22h36v6H14zM14 32h36v6H14zM14 42h24v6H14z' fill='%235ec6c0'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#16222e;
+    --ink-soft:#3c4c5c;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --line:#ddd8cf;
+    --teal:#2a8f8a;
+    --teal-deep:#1f6d69;
+    --amber:#c98a2b;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--teal-deep);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px;}
+
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:40;
+    background:rgba(246,244,239,.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{
+    display:flex;align-items:center;gap:18px;
+    min-height:66px;flex-wrap:wrap;padding:8px 0;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--ink);letter-spacing:.2px;}
+  .logo svg{flex:none;}
+  nav.top{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap;}
+  nav.top a{
+    display:inline-block;padding:6px 12px;border-radius:999px;
+    color:var(--ink-soft);font-size:14.5px;
+  }
+  nav.top a:hover{background:#e7e2d8;text-decoration:none;color:var(--ink);}
+
+  /* hero */
+  .hero{
+    background:linear-gradient(180deg,#1b2b3a 0%,#203446 100%);
+    color:#eef2f4;
+    padding:52px 0 46px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;right:-80px;top:-60px;width:340px;height:340px;
+    background:radial-gradient(circle,rgba(94,198,192,.22),transparent 68%);
+    pointer-events:none;
+  }
+  .hero .inner{position:relative;z-index:1;max-width:760px;}
+  .kicker{
+    display:inline-block;font-size:13px;letter-spacing:2px;
+    color:#8fd3cf;border:1px solid rgba(143,211,207,.45);
+    padding:3px 12px;border-radius:999px;margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(27px,4.4vw,42px);
+    line-height:1.28;margin:0 0 16px;font-weight:800;letter-spacing:.5px;
+  }
+  .hero p.lead{
+    font-size:clamp(15px,1.9vw,17px);
+    color:#c9d6de;margin:0 0 26px;max-width:640px;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:11px 22px;border-radius:999px;
+    font-size:15px;font-weight:600;border:1px solid transparent;
+    transition:.15s;
+  }
+  .btn:hover{text-decoration:none;}
+  .btn-primary{background:var(--teal);color:#fff;}
+  .btn-primary:hover{background:#33a29c;}
+  .btn-ghost{background:transparent;color:#e6eef1;border-color:rgba(230,238,241,.4);}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);}
+  .hero-stats{
+    display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;
+    padding-top:22px;border-top:1px solid rgba(255,255,255,.14);
+  }
+  .hero-stats div{min-width:120px;}
+  .hero-stats b{display:block;font-size:19px;color:#8fd3cf;font-weight:700;}
+  .hero-stats span{font-size:13px;color:#a9b9c4;}
+
+  /* sections */
+  section{padding:54px 0;}
+  section.alt{background:#efece4;}
+  .sec-head{max-width:720px;margin-bottom:28px;}
+  .sec-head .tag{
+    font-size:12.5px;letter-spacing:2px;color:var(--amber);
+    font-weight:700;margin-bottom:8px;display:block;
+  }
+  h2{
+    font-size:clamp(21px,2.8vw,27px);margin:0 0 12px;
+    font-weight:800;line-height:1.35;
+  }
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:15.5px;}
+
+  .grid{display:grid;gap:18px;}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  .g2{grid-template-columns:repeat(2,1fr);}
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius);padding:22px 22px 20px;
+  }
+  .card h3{margin:0 0 8px;font-size:16.5px;font-weight:700;}
+  .card p{margin:0;font-size:14.8px;color:var(--ink-soft);}
+  .card .ic{
+    width:36px;height:36px;border-radius:10px;display:flex;
+    align-items:center;justify-content:center;margin-bottom:14px;
+    background:#e4f1f0;color:var(--teal-deep);
+  }
+
+  /* timeline */
+  .timeline{position:relative;margin:0;padding:0;list-style:none;}
+  .timeline li{
+    position:relative;padding:0 0 26px 30px;
+    border-left:2px solid #cfcabf;
+  }
+  .timeline li:last-child{border-left-color:transparent;padding-bottom:0;}
+  .timeline li::before{
+    content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;
+    border-radius:50%;background:var(--teal);border:2px solid var(--paper);
+    box-shadow:0 0 0 2px var(--teal);
+  }
+  .timeline b{display:block;font-size:15.5px;margin-bottom:4px;}
+  .timeline span{font-size:14.6px;color:var(--ink-soft);}
+
+  /* table-ish list */
+  .worklist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
+  .worklist li{
+    display:flex;gap:16px;align-items:flex-start;
+    padding:16px 4px;border-bottom:1px solid var(--line);
+  }
+  .worklist .no{
+    flex:none;width:34px;height:34px;border-radius:9px;
+    background:#e4f1f0;color:var(--teal-deep);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:14px;
+  }
+  .worklist h4{margin:0 0 3px;font-size:15.5px;}
+  .worklist p{margin:0;font-size:14.4px;color:var(--ink-soft);}
+
+  /* note block */
+  .note{
+    border-left:4px solid var(--amber);background:#fbf6ec;
+    padding:18px 22px;border-radius:0 10px 10px 0;
+    font-size:14.8px;color:var(--ink-soft);
+  }
+  .note b{color:var(--ink);}
+
+  /* faq */
+  details{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:16px 20px;margin-bottom:12px;
+  }
+  details summary{
+    cursor:pointer;font-weight:700;font-size:15.3px;
+    list-style:none;position:relative;padding-right:24px;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{
+    content:"+";position:absolute;right:0;top:-2px;
+    color:var(--teal-deep);font-size:19px;font-weight:700;
+  }
+  details[open] summary::after{content:"–";}
+  details p{margin:12px 0 0;font-size:14.7px;color:var(--ink-soft);}
+
+  /* footer */
+  footer.site{
+    background:#1b2b3a;color:#b7c5ce;
+    padding:40px 0 30px;font-size:14px;
+  }
+  footer.site .cols{display:flex;gap:40px;flex-wrap:wrap;justify-content:space-between;}
+  footer .brand{max-width:340px;}
+  footer .brand strong{color:#eef2f4;font-size:16px;display:block;margin-bottom:8px;}
+  footer .brand p{margin:0;line-height:1.7;color:#93a5b1;}
+  footer .links{display:flex;gap:44px;flex-wrap:wrap;}
+  footer .links div{min-width:130px;}
+  footer .links b{display:block;color:#eef2f4;font-size:14px;margin-bottom:8px;}
+  footer .links a{display:block;color:#93a5b1;font-size:13.6px;padding:2px 0;}
+  footer .links a:hover{color:#8fd3cf;}
+  .copy{
+    margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);
+    font-size:12.8px;color:#7b8b96;
+  }
+
+  @media (max-width:860px){
+    .g3{grid-template-columns:1fr;}
+    .g2{grid-template-columns:1fr;}
+    section{padding:42px 0;}
+    .hero{padding:40px 0 36px;}
+    nav.top{margin-left:0;width:100%;}
+    nav.top a{padding:5px 10px;font-size:13.6px;}
+    .hero-stats{gap:18px;}
+    footer .cols{gap:26px;}
+  }
+  @media (max-width:420px){
+    .wrap{padding:0 16px;}
+    .hero-actions .btn{width:100%;text-align:center;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="logo">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1b2b3a"/>
+        <path d="M14 22h36v6H14zM14 32h36v6H14zM14 42h24v6H14z" fill="#5ec6c0"/>
+      </svg>
+      <span>人人影视字幕组</span>
+    </div>
+    <nav class="top" aria-label="主导航">
+      <a href="#origin">起源脉络</a>
+      <a href="#works">翻译作品</a>
+      <a href="#version">版本命名</a>
+      <a href="#faq">常见疑问</a>
+      <a href="#read">阅读入口</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap inner">
+      <span class="kicker">民间影视字幕翻译</span>
+      <h1>人人影视字幕组</h1>
+      <p class="lead">人人影视字幕组是中文互联网上较早面向海外影视剧进行字幕翻译的民间团队之一。本页围绕它的发展脉络、作品类型与字幕版本命名习惯展开，帮助访问者理解这一名称所指的团队及其作品面貌。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#origin">从起源脉络读起</a>
+        <a class="btn btn-ghost" href="#works">查看作品分类</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>海外影视剧</b><span>主要翻译对象</span></div>
+        <div><b>多语种来源</b><span>英日韩等原声</span></div>
+        <div><b>民间协作</b><span>非官方组织形式</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="origin">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">栏 目 一</span>
+        <h2>起源脉络：从论坛字幕到规模化协作</h2>
+        <p>人人影视字幕组并非一开始就以完整团队形态出现，而是在论坛与资源分享的土壤中逐步成形。理解这一过程，比记住某个节点更能看清它的性质。</p>
+      </div>
+
+      <div class="grid g2" style="align-items:start;">
+        <div>
+          <ul class="timeline">
+            <li>
+              <b>早期：兴趣驱动的自发翻译</b>
+              <span>最初的参与者多为熟悉外语的影视爱好者，凭兴趣为热门海外剧集配上中文字幕，作品在论坛内部分发，规模有限、周期不固定。</span>
+            </li>
+            <li>
+              <b>中期：分工趋于稳定</b>
+              <span>随着需求增长，翻译、校对、时间轴、压制等环节逐渐分工，人人影视字幕组形成了相对固定的协作流程，产出节奏也随之加快。</span>
+            </li>
+            <li>
+              <b>后期：版权环境变化下的调整</b>
+              <span>随着版权保护要求提高，此类民间字幕翻译活动的空间收窄，团队形态与传播方式均经历过明显变化，作品流通也受到影响。</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="ic" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <h3>理解它的三个前提</h3>
+          <p>第一，人人影视字幕组属于民间自发组织，不是持证的翻译或发行机构；第二，其主要工作是字幕翻译与制作，而非影视内容的版权持有；第三，团队的人员构成与产出范围在不同阶段并不一致，任何单一描述都只是局部。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="works">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">栏 目 二</span>
+        <h2>翻译作品：以海外剧集为主的字幕产出</h2>
+        <p>人人影视字幕组的作品覆盖面较广，但重心始终落在海外剧集。以下按作品类型归纳其常见的翻译对象，便于区分不同来源与语种。</p>
+      </div>
+
+      <div class="grid g3">
+        <div class="card">
+          <div class="ic" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="13" rx="2"/><path d="M8 21h8"/>
+            </svg>
+          </div>
+          <h3>欧美剧集</h3>
+          <p>英语剧集是数量最多的一类，涵盖剧情、科幻、犯罪等题材。字幕需处理大量对白与专业术语，翻译与校对环节投入较高。</p>
+        </div>
+        <div class="card">
+          <div class="ic" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5h16v11H9l-5 4z"/>
+            </svg>
+          </div>
+          <h3>日韩剧集</h3>
+          <p>日语与韩语作品的文化语境差异较大，敬语体系与俗语表达是翻译难点，人人影视字幕组在此类作品中常需做本地化处理。</p>
+        </div>
+        <div class="card">
+          <div class="ic" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19V7l8-3 8 3v12"/><path d="M4 19h16"/>
+            </svg>
+          </div>
+          <h3>纪录与综艺</h3>
+          <p>纪录片字幕偏重信息准确，综艺则需处理大量口语与字幕特效。两类作品对时间轴精度的要求都不低，呈现方式与剧集不同。</p>
+        </div>
+      </div>
+
+      <ul class="worklist" style="margin-top:26px;">
+        <li>
+          <span class="no">01</span>
+          <div>
+            <h4>翻译与校对</h4>
+            <p>先由译者完成初稿，再由校对核对语义、术语一致性与中文表达，这是人人影视字幕组保证字幕可读性的核心环节。</p>
+          </div>
+        </li>
+        <li>
+          <span class="no">02</span>
+          <div>
+            <h4>时间轴制作</h4>
+            <p>依据片源对白节奏切分字幕起止时间，使字幕与画面口型、情节推进相匹配，节奏过紧或过松都会影响观看体验。</p>
+          </div>
+        </li>
+        <li>
+          <span class="no">03</span>
+          <div>
+            <h4>样式与封装</h4>
+            <p>确定字体、字号、位置与描边，再将字幕与片源合成或单独输出字幕文件，形成最终可分发的人人影视字幕组作品。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="version">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">栏 目 三</span>
+        <h2>版本命名：读懂字幕文件名里的信息</h2>
+        <p>同一部剧常有多个字幕版本，文件名中的字母与数字并非随意排列。掌握命名习惯，能快速判断版本来源、语言与修订状态。</p>
+      </div>
+
+      <div class="grid g2">
+        <div class="card">
+          <h3>语言与来源标识</h3>
+          <p>文件名中常见的语言缩写用于区分简体、繁体或双语字幕，来源标识则提示字幕是译自原声还是转译自其他语言版本。人人影视字幕组的作品通常会在名称中标注语言类型，便于访问者选择。</p>
+        </div>
+        <div class="card">
+          <h3>版本与修订序号</h3>
+          <p>同一集出现多个文件名时，往往代表修订次数的差异。序号靠后的版本一般修正了错译或时间轴偏移，观看时优先选择修订版更为稳妥。</p>
+        </div>
+        <div class="card">
+          <h3>分辨率与片源匹配</h3>
+          <p>字幕需与片源的分辨率、帧率匹配，否则会出现时间漂移。文件名中的分辨率标识用于提示适配范围，人人影视字幕组在发布时通常会注明对应片源。</p>
+        </div>
+        <div class="card">
+          <h3>命名差异不是质量结论</h3>
+          <p>命名规范只反映版本信息，并不直接等于质量高低。判断字幕好坏仍需结合术语准确性、中文流畅度与时间轴精度来看。</p>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:24px;">
+        <b>阅读提示：</b>人人影视字幕组的作品属于民间翻译成果，其准确性依赖译者与校对的人工判断，不同作品之间水平存在差异，参考时宜保持核对习惯。
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">栏 目 四</span>
+        <h2>常见疑问：关于名称与性质的澄清</h2>
+        <p>围绕人人影视字幕组，访问者最常提出的几个问题集中在身份、范围与现状，下面逐条说明。</p>
+      </div>
+
+      <details open>
+        <summary>人人影视字幕组是官方机构吗？</summary>
+        <p>不是。它是民间自发形成的字幕翻译团队，不具备官方翻译或发行资质，其作品也不代表片方立场。</p>
+      </details>
+      <details>
+        <summary>它的翻译范围只有剧集吗？</summary>
+        <p>剧集是主要部分，但纪录片、综艺、电影等类型也有涉及。不同阶段的产出重点并不完全一致。</p>
+      </details>
+      <details>
+        <summary>为什么同一部剧会有多个字幕版本？</summary>
+        <p>译制时间、校对轮次、片源适配都会产生不同版本。人人影视字幕组在修订过程中也可能多次更新，形成多版本并存的情况。</p>
+      </details>
+      <details>
+        <summary>现在还能看到它的作品吗？</summary>
+        <p>受版权环境与传播渠道变化影响，作品的流通状态与早期不同。本页只做主题层面的梳理，不提供具体资源地址。</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="read">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">栏 目 五</span>
+        <h2>阅读入口：按需求选择你的起点</h2>
+        <p>如果你刚接触这一名称，建议先读起源脉络；如果关注字幕本身，可直接进入作品与版本两部分。</p>
+      </div>
+
+      <div class="grid g3">
+        <div class="card">
+          <h3>想了解来龙去脉</h3>
+          <p>从时间线读起，按阶段理解人人影视字幕组如何从兴趣小组走向规模化协作，以及环境变化带来的调整。</p>
+          <p style="margin-top:12px;"><a href="#origin">前往起源脉络 →</a></p>
+        </div>
+        <div class="card">
+          <h3>想判断字幕质量</h3>
+          <p>重点看翻译校对与时间轴两个环节，再结合版本命名理解修订序号，能更理性地评估一份字幕的可靠性。</p>
+          <p style="margin-top:12px;"><a href="#works">前往翻译作品 →</a></p>
+        </div>
+        <div class="card">
+          <h3>想弄清文件名含义</h3>
+          <p>语言标识、修订序号与分辨率匹配是三个关键点，读懂它们，面对多版本并存时就不会无从下手。</p>
+          <p style="margin-top:12px;"><a href="#version">前往版本命名 →</a></p>
+        </div>
+      </div>
+
+      <div style="margin-top:30px;">
+        <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.72;">下载</a>
+        <span style="font-size:13.6px;color:var(--ink-soft);margin-left:12px;">主题资料下载入口，内容整理中。</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <strong>人人影视字幕组</strong>
+        <p>围绕民间影视字幕翻译团队的主题页面，梳理发展脉络、作品类型与版本命名习惯，供访问者按需查阅。</p>
+      </div>
+      <div class="links">
+        <div>
+          <b>内容栏目</b>
+          <a href="#origin">起源脉络</a>
+          <a href="#works">翻译作品</a>
+          <a href="#version">版本命名</a>
+        </div>
+        <div>
+          <b>延伸阅读</b>
+          <a href="#faq">常见疑问</a>
+          <a href="#read">阅读入口</a>
+          <a href="#origin">协作流程</a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">本页为人人影视字幕组主题内容页，所述团队性质与作品范围以公开信息可支持的部分为限。</div>
+  </div>
+</footer>
+
+</body>
+</html>
